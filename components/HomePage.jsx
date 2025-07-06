@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Card, CardContent } from "./ui/card";
 import { MoveRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { Instagram } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -80,6 +81,18 @@ export default function HomePage() {
           Sign Up Now
         </Button>
       </section>
+      <section className="bg-black py-10 text-center">
+  <a
+    href="https://instagram.com/ovrd_studio"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center text-white hover:text-pink-500 transition duration-300"
+  >
+    <Instagram className="w-8 h-8" />
+    <span className="ml-2 text-lg font-medium">Follow us on Instagram</span>
+  </a>
+</section>
+
     </main>
   );
 }
