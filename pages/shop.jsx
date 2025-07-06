@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useCart } from "../components/CartContext";
 import { Card, CardContent } from "../components/ui/card";
 import { Button } from "../components/ui/button";
 
 export default function ShopPage() {
-  const [cartItems, setCartItems] = useState([]);
+  const { cartItems, addToCart } = useCart();
 
   const products = [
     { id: 1, name: "Dose Tee", price: "₹999" },
