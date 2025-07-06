@@ -41,9 +41,12 @@ export default function HomePage() {
           animate={{ opacity: 1, y: 0 }} 
           transition={{ delay: 1, duration: 0.6 }}
         >
-          <Button className="bg-white text-black hover:bg-gray-200 px-6 py-3 text-lg font-semibold rounded-2xl shadow-xl">
-            Shop the Drop <MoveRight className="ml-2" />
-          </Button>
+<a href="/shop">
+  <Button className="bg-white text-black hover:bg-gray-200 px-6 py-3 text-lg font-semibold rounded-2xl shadow-xl">
+    Shop the Drop <MoveRight className="ml-2" />
+  </Button>
+</a>
+
         </motion.div>
       </section>
 
